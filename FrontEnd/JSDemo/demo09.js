@@ -24,7 +24,7 @@ setTimeout(function() {
 	task1();
 	setTimeout(function() {
 		task2();
-		setTimtout(function(){
+		setTimeout(function(){
 			task3();
 		}, 1000);
 	}, 700);
