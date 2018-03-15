@@ -1,7 +1,7 @@
 // JS Promise
 
 function task1() {
-	console.log("Executing taskl");
+	console.log("Executing task1");
 }
 
 function task2() {
