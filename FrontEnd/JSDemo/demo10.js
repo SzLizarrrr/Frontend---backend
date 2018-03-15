@@ -12,31 +12,57 @@ function task3() {
 	console.log("Executing task3");
 }
 
+// function t1() {
+// 	return new Promise(function(resolve, reject){
+// 		setTimeout(function(){
+// 			task1();
+// 			resolve("Task1 is finsihed.");
+// 		}, 500);
+// 	});
+// }
+//
+// function t2() {
+// 	return new Promise(function(resolve, reject){
+// 		setTimeout(function(){
+// 			task2();
+// 			resolve("Task2 is finsihed.");
+// 		}, 700);
+// 	});
+// }
+//
+// function t3() {
+// 	return new Promise(function(resolve, reject){
+// 		setTimeout(function(){
+// 			task3();
+// 			resolve("Task3 is finsihed.");
+// 		}, 1000);
+// 	});
+// }
 function t1() {
-	return new Promise(function(resolve, reject){
-		setTimeout(function(){
-			task1();
-			resolve("Task1 is finsihed.");
-		}, 500);
-	});
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            task1()
+            resolve("Task1 is finished.")
+        }, 500)
+    })
 }
 
 function t2() {
-	return new Promise(function(resolve, reject){
-		setTimeout(function(){
-			task2();
-			resolve("Task2 is finsihed.");
-		}, 700);
-	});
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            task2()
+            resolve("Task2 is finished.")
+        }, 700)
+    })
 }
 
 function t3() {
-	return new Promise(function(resolve, reject){
-		setTimeout(function(){
-			task3();
-			resolve("Task3 is finsihed.");
-		}, 1000);
-	});
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            task3()
+            resolve("Task3 is finished.")
+        }, 1000)
+    })
 }
 
 // status: pending, resolved(fulfilled), rejected
